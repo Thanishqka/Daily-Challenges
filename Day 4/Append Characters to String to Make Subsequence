@@ -1,0 +1,17 @@
+class Solution {
+    public int appendCharacters(String s, String t) {
+        int i=0,j=0;
+        int a=s.length();
+        int b=t.length();
+        while(i<a && j<b){
+            if(s.charAt(i)==t.charAt(j)){
+                i++;
+                j++;
+            }
+            else{
+                i++;
+            }
+        }
+        return b-j;
+    }
+}
